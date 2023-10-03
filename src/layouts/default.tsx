@@ -1,3 +1,5 @@
+import Navbar from "../components/navbar";
+
 export interface LayoutProps {
   children: React.ReactNode;
 }
@@ -5,7 +7,7 @@ export interface LayoutProps {
 export default function Layout({ children }: LayoutProps) {
   return (
     <>
-      <h1>Welcome to openapps</h1>
+      <Navbar />
       {children}
     </>
   );
