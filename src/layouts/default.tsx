@@ -1,3 +1,4 @@
+import Footer from "@/components/footer";
 import Navbar from "../components/navbar";
 
 export interface LayoutProps {
@@ -6,9 +7,12 @@ export interface LayoutProps {
 
 export default function Layout({ children }: LayoutProps) {
   return (
-    <>
+    <div className="flex flex-col min-h-screen">
       <Navbar />
-      {children}
-    </>
+
+      <main className="flex-grow w-full">{children}</main>
+
+      <Footer />
+    </div>
   );
 }
