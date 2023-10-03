@@ -1,8 +1,7 @@
-import { Link } from "@/types/link";
-import NavLink from "./nav-link";
+import NavLink, { NavLinkProps } from "./nav-link";
 
 export default function Navbar() {
-  const links: Link[] = [
+  const links: NavLinkProps[] = [
     {
       content: "About",
       url: "/about",

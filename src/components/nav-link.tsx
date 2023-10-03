@@ -1,5 +1,9 @@
-import { Link as NavLinkProps } from "@/types/link";
 import Link from "next/link";
+
+export interface NavLinkProps {
+  content: string;
+  url: string;
+}
 
 export default function NavLink({ content, url }: NavLinkProps) {
   return (
